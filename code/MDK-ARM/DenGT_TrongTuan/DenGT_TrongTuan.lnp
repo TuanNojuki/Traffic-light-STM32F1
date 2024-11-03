@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dengt_trongtuan\startup_stm32f103xb.o"
+"dengt_trongtuan\main.o"
+"dengt_trongtuan\stm32f1xx_it.o"
+"dengt_trongtuan\stm32f1xx_hal_msp.o"
+"dengt_trongtuan\stm32f1xx_hal_gpio_ex.o"
+"dengt_trongtuan\stm32f1xx_hal_tim.o"
+"dengt_trongtuan\stm32f1xx_hal_tim_ex.o"
+"dengt_trongtuan\stm32f1xx_hal.o"
+"dengt_trongtuan\stm32f1xx_hal_rcc.o"
+"dengt_trongtuan\stm32f1xx_hal_rcc_ex.o"
+"dengt_trongtuan\stm32f1xx_hal_gpio.o"
+"dengt_trongtuan\stm32f1xx_hal_dma.o"
+"dengt_trongtuan\stm32f1xx_hal_cortex.o"
+"dengt_trongtuan\stm32f1xx_hal_pwr.o"
+"dengt_trongtuan\stm32f1xx_hal_flash.o"
+"dengt_trongtuan\stm32f1xx_hal_flash_ex.o"
+"dengt_trongtuan\stm32f1xx_hal_exti.o"
+"dengt_trongtuan\system_stm32f1xx.o"
+--strict --scatter "DenGT_TrongTuan\DenGT_TrongTuan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DenGT_TrongTuan.map" -o DenGT_TrongTuan\DenGT_TrongTuan.axf
